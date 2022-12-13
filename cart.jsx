@@ -49,6 +49,7 @@ const useDataApi = (initialUrl, initialData) => {
   }, [url]);
   return [state, setUrl];
 };
+
 const dataFetchReducer = (state, action) => {
   switch (action.type) {
     case "FETCH_INIT":
@@ -213,4 +214,3 @@ const Products = (props) => {
 };
 // ========================================
 ReactDOM.render(<Products />, document.getElementById("root"));
-
